@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spanish Chatter Teachers</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+
+        header {
+            background-color: #004d99;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        h1 {
+            margin: 0;
+        }
+
+        .teacher-list {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px;
+            flex-wrap: wrap;
+        }
+
+        .teacher-card {
+            background-color: white;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            width: 280px;
+            text-align: center;
+            padding: 20px;
+            margin: 10px;
+            transition: transform 0.2s ease-in-out;
+        }
+
+        .teacher-card:hover {
+            transform: scale(1.05);
+        }
+
+        .teacher-card img {
+            width: 100%;
+            height: auto;
+            border-radius: 50%;
+            margin-bottom: 10px;
+        }
+
+        .teacher-card h3 {
+            font-size: 1.5rem;
+            color: #004d99;
+            margin-bottom: 10px;
+        }
+
+        .teacher-card p {
+            font-size: 1rem;
+            margin-bottom: 20px;
+        }
+
+        .teacher-card a {
+            text-decoration: none;
+            color: #004d99;
+            font-weight: bold;
+        }
+
+        .cta-button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #004d99;
+            color: white;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        /* Make the layout responsive */
+        @media (max-width: 768px) {
+            .teacher-list {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .teacher-card {
+                width: 80%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Meet Our Teachers</h1>
+    <p>Learn Spanish in a relaxed environment with our experienced teachers.</p>
+</header>
+
+<section>
+    <h2 style="text-align:center;">Choose the perfect teacher for you!</h2>
+
+    <div class="teacher-list">
+        <!-- Teacher 1 -->
+        <div class="teacher-card">
+            <img src="juan-photo.jpg" alt="Juan Pérez">
+            <h3>Juan Pérez</h3>
+            <p>Specializing in conversational Spanish. Let’s practice real-world scenarios over a coffee or pint!</p>
+            <p><a href="mailto:juan@example.com">Email Juan</a></p>
+        </div>
+
+        <!-- Teacher 2 -->
+        <div class="teacher-card">
+            <img src="ana-photo.jpg" alt="Ana González">
+            <h3>Ana González</h3>
+            <p>Expert in Spanish for business and culture. Learn practical Spanish for your professional and daily life.</p>
+            <p><a href="mailto:ana@example.com">Email Ana</a></p>
+        </div>
+    </div>
+
+    <p style="text-align:center;">Not sure who to choose? <a href="contact.html" class="cta-button">Contact Us</a> for guidance.</p>
+</section>
+
+</body>
+</html>
